@@ -1,0 +1,136 @@
+html,body{
+    height: 100vh;
+    margin: 0;
+    padding: 0 ;
+    background: linear-gradient(to bottom right, #000000,darkgray);
+    font-family: "italic, sans-serif";
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(50px); /* Start slightly below its position */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Back to its original position */
+    }
+}
+@keyframes fadeIn{
+    0% {
+        opacity: 0; /* Start fully transparent */
+        transform: scale(1); /* Start smaller for pop-in effect */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Hamburger menu container */
+.hamburger-menu {
+    position: fixed; /* Fix it to the top-right corner */
+    top: 20px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    width: 30px; /* Width of the menu icon */
+    height: 25px; /* Height of the menu icon */
+    display: flex;
+    flex-direction: column; /* Stack the lines vertically */
+    justify-content: space-between; /* Evenly space the lines */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hamburger menu lines */
+.hamburger-menu span {
+    display: block;
+    height: 4px; /* Thickness of each line */
+    width: 100%; /* Full width of the container */
+    background-color: white; /* Line color */
+    border-radius: 2px; /* Slightly round the edges */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    animation: fadeIn 4s ease-in;
+}
+
+/* Hover effect for the hamburger menu */
+.hamburger-menu:hover span {
+    background-color: #A9A9A9; /* Change color on hover */
+}
+
+.h1 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    color: white;
+    margin-right: auto;
+    animation: fadeIn 4s ease-in;
+}
+
+.container{
+padding-left: 0.5px;
+}
+.p1{
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: white;
+    animation: fadeIn 4s ease-in;
+}
+.p2{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+    animation: fadeIn 4s ease-in;
+}
+.p3{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+.b1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px auto;
+    margin-left: 20px;
+    color: #FFFFFF;
+    background-color: gray;
+    background-color: #737373;
+    border: 2px solid #A9A9A9;
+
+
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    animation: fadeInSlideUp 2s ease-out; 
+}
+
+.b1:hover {
+    background-color: #A9A9A9; 
+    color: #000000; 
+    transform: scale(1.1); 
+}
+.div1 {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+    background-color: #000000;
+}
+.div2{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+.div3{
+    background-color: #000000;
+}
+.logo{
+    background-color: none;
+   
+}
